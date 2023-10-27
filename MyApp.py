@@ -1,5 +1,8 @@
 # C:\Users\User>cd C:\Users\User\Documents\IDE_Git
 # C:\Users\User\Documents\IDE_Git>streamlit run MyApp.py
+
+# Облако Стримлит
+# https://lazarevaudit.streamlit.app/
  
 #   You can now view your Streamlit app in your browser.
 
@@ -18,10 +21,11 @@ from pandas.api.types import (
 )
 import streamlit as st
 import pandas as pd
+import openpyxl
 
 
 st.set_page_config(
-    page_title="Aналитический центр",
+    page_title="Lazarev_audit",
     layout="wide"
 )
 
