@@ -41,7 +41,10 @@ if password != 'Inna':
 else:
     
     # df = pd.read_excel('https://github.com/MyAudit/MA/raw/master/!%202023%2010%2001%20faip_sravnenie_k%202023%2010%2025_1.xlsx')
-    df = pd.read_excel('https://github.com/MyAudit/km/raw/master/2023_10_01_faip_sravnenie_k_2023_10_25_1.xlsx')
+    # df = pd.read_excel('https://github.com/MyAudit/km/raw/master/2023_10_01_faip_sravnenie_k_2023_10_25_1.xlsx')
+    df = pd.read_excel('https://github.com/MyAudit/km/raw/master/2023_10_01_faip_sravnenie_k_20231031.xlsx')
+    
+    
     df['ГРБС(общее)'] = [('0' + str(i)) if len(str(i)) == 2 else str(i) for i in df['ГРБС(общее)']]
     
     st.subheader('Анализ ФАИП на 01.10.2023')
